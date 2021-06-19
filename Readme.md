@@ -5,5 +5,5 @@
 <p>&nbsp;</p>
 <p><span style="color: #0000ff;"><strong>&nbsp;Source-Code folder structure: (/src/)</strong></span></p>
 <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
-<li style="clear: both;">"/sdk" folder contains C-code to record and playback audio (Sine-Sweeps in the project) and IMU data, convolve the output with minimal latency, extract impulse responses and calculate position of a robot.<br /></li>
+<li style="clear: both;">"/sdk" folder contains C-code to record and playback audio (Sine-Sweeps in the project) and IMU data, convolve the output with minimal latency, extract impulse responses, map boundaries and calculate position of a robot.<br /></li>
 <li style="clear: both;">"/juce" folder contains platform independent JUCE framework C++-code for GUI generation, real-time user interface and binaural audio playback. <br /></li>
