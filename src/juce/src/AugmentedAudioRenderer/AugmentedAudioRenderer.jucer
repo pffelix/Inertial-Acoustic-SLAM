@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT name="AugmentedAudioRenderer" version="1.0.0" userNotes="Tests the audio latency of a device, track the track head position via acoustic impulse and IMU and render binaural audio signal."
+              companyWebsite="http://juce.com" defines="PIP_JUCE_EXAMPLES_DIRECTORY=QzpcRXhjaGFuZ2VcTWFzdGVyVGhlc2lzXEZyYW1ld29ya3NcSlVDRVxleGFtcGxlcw=="
+              projectType="guiapp" id="pel3Bf" jucerVersion="5.4.5" headerPath="C:\Exchange\MasterThesis\Code\sensor\src\juce\lib\ASIOSDK\common&#10;C:\Exchange\MasterThesis\Code\sensor\src\SDK\lib\HeadTracker&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\HeadTracker&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\BinauralSpatializer&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\NgImuC&#10;C:\Exchange\MasterThesis\CodeExperimental\ParticleFilterC\src&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\Vicon"
+              companyCopyright="Felix Pfreundtner">
+  <MAINGROUP id="ISptaE" name="AugmentedAudioRenderer">
+    <GROUP id="{BAA9A86A-9BAE-4A4A-4B93-4F044D0F8543}" name="BinauralSpatializer">
+      <GROUP id="{8DA80291-C962-01B6-FCDE-32EB20FC8BD9}" name="delaunay">
+        <FILE id="A2fZlM" name="delaunay.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/delaunay/delaunay.cpp"/>
+        <FILE id="v582Pa" name="delaunay.h" compile="0" resource="0" file="Source/BinauralSpatializer/delaunay/delaunay.h"/>
+        <FILE id="TGtpgv" name="edge.h" compile="0" resource="0" file="Source/BinauralSpatializer/delaunay/edge.h"/>
+        <FILE id="eKgNdf" name="LICENSE" compile="0" resource="1" file="Source/BinauralSpatializer/delaunay/LICENSE"/>
+        <FILE id="FHFY5L" name="triangle.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/delaunay/triangle.cpp"/>
+        <FILE id="M8oiTD" name="triangle.h" compile="0" resource="0" file="Source/BinauralSpatializer/delaunay/triangle.h"/>
+        <FILE id="ykspNP" name="vector2.h" compile="0" resource="0" file="Source/BinauralSpatializer/delaunay/vector2.h"/>
+      </GROUP>
+      <GROUP id="{31778712-E09B-4581-320E-EEAB139F0724}" name="images">
+        <FILE id="pBmbsK" name="head_side.h" compile="0" resource="0" file="Source/BinauralSpatializer/images/head_side.h"/>
+        <FILE id="z4WzL5" name="head_top.h" compile="0" resource="0" file="Source/BinauralSpatializer/images/head_top.h"/>
+        <FILE id="c5weeQ" name="source_icon.h" compile="0" resource="0" file="Source/BinauralSpatializer/images/source_icon.h"/>
+      </GROUP>
+      <FILE id="cUtY17" name="AtomicAudioParameter.cpp" compile="1" resource="0"
+            file="Source/BinauralSpatializer/AtomicAudioParameter.cpp"/>
+      <FILE id="Z53osw" name="AtomicAudioParameter.h" compile="0" resource="0"
+            file="Source/BinauralSpatializer/AtomicAudioParameter.h"/>
+      <FILE id="ioAg3k" name="Crossover.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/Crossover.cpp"/>
+      <FILE id="Z1pGSU" name="Crossover.h" compile="0" resource="0" file="Source/BinauralSpatializer/Crossover.h"/>
+      <FILE id="vrBF6I" name="HRIRFilter.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/HRIRFilter.cpp"/>
+      <FILE id="JnbaKE" name="HRIRFilter.h" compile="0" resource="0" file="Source/BinauralSpatializer/HRIRFilter.h"/>
+      <FILE id="joIYoB" name="HRTFContainer.cpp" compile="1" resource="0"
+            file="Source/BinauralSpatializer/HRTFContainer.cpp"/>
+      <FILE id="C2zBJC" name="HRTFContainer.h" compile="0" resource="0" file="Source/BinauralSpatializer/HRTFContainer.h"/>
+      <FILE id="MdhQ32" name="MainDisplay.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/MainDisplay.cpp"/>
+      <FILE id="bWuVjF" name="MainDisplay.h" compile="0" resource="0" file="Source/BinauralSpatializer/MainDisplay.h"/>
+      <FILE id="AO9YAk" name="MainStandalone.cpp" compile="1" resource="0"
+            file="Source/BinauralSpatializer/MainStandalone.cpp"/>
+      <FILE id="vnTG8B" name="OouraFFT.cpp" compile="1" resource="0" file="Source/BinauralSpatializer/OouraFFT.cpp"/>
+      <FILE id="ntsJuP" name="OouraFFT.h" compile="0" resource="0" file="Source/BinauralSpatializer/OouraFFT.h"/>
+      <FILE id="C5GtDZ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/BinauralSpatializer/PluginEditor.cpp"/>
+      <FILE id="UXEGOV" name="PluginEditor.h" compile="0" resource="0" file="Source/BinauralSpatializer/PluginEditor.h"/>
+      <FILE id="B3rG0E" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/BinauralSpatializer/PluginProcessor.cpp"/>
+      <FILE id="f4RMkD" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/BinauralSpatializer/PluginProcessor.h"/>
+      <FILE id="tVRjM0" name="Util.h" compile="0" resource="0" file="Source/BinauralSpatializer/Util.h"/>
+    </GROUP>
+    <GROUP id="{9CD7F89D-F92B-EEAB-4AA4-E66DE09F833C}" name="HeadTracker">
+      <FILE id="YzuK4O" name="DemoUtilities.h" compile="0" resource="0" file="Source/HeadTracker/DemoUtilities.h"/>
+      <FILE id="SjJLaf" name="HeaderTrackerJuce.h" compile="0" resource="0"
+            file="Source/HeadTracker/HeaderTrackerJuce.h"/>
+      <FILE id="V1A8A2" name="HeadTrackerGui.h" compile="0" resource="0"
+            file="Source/HeadTracker/HeadTrackerGui.h"/>
+      <FILE id="H61JTt" name="LatencyTester.h" compile="0" resource="0" file="Source/HeadTracker/LatencyTester.h"/>
+      <FILE id="F6wj7a" name="JuceCWrapper.cpp" compile="1" resource="0"
+            file="Source/HeadTracker/JuceCWrapper.cpp"/>
+      <FILE id="EBldd5" name="ViconCWrapper.h" compile="0" resource="0" file="Source/HeadTracker/ViconCWrapper.h"/>
+      <FILE id="htvjBE" name="ViconCWrapper.cpp" compile="1" resource="0"
+            file="Source/HeadTracker/ViconCWrapper.cpp"/>
+      <FILE id="qCBoFZ" name="JuceCWrapper.h" compile="0" resource="0" file="Source/HeadTracker/JuceCWrapper.h"/>
+      <FILE id="k6AWIW" name="AudioLiveScrollingDisplay.h" compile="0" resource="0"
+            file="Source/HeadTracker/AudioLiveScrollingDisplay.h"/>
+    </GROUP>
+    <GROUP id="{A18F98F9-2D66-4D65-49C5-9C9E305AA164}" name="Vicon">
+      <FILE id="KnrwCG" name="ViconMain.cpp" compile="1" resource="0" file="Source/Vicon/ViconMain.cpp"/>
+      <FILE id="Dx19Uj" name="ViconMain.h" compile="0" resource="0" file="Source/Vicon/ViconMain.h"/>
+    </GROUP>
+    <GROUP id="{77038B4D-BCF0-AE72-63F1-3E3B4711D8C7}" name="NgImuC">
+      <FILE id="EzIZp9" name="NgimuMain.c" compile="1" resource="0" file="Source/NgImuC/NgimuMain.c"/>
+      <FILE id="G8I8lm" name="NgimuMain.h" compile="0" resource="0" file="Source/NgImuC/NgimuMain.h"/>
+      <FILE id="LvARsQ" name="NgimuReceive.c" compile="1" resource="0" file="Source/NgImuC/NgimuReceive.c"/>
+      <FILE id="TAJ57M" name="NgimuReceive.h" compile="0" resource="0" file="Source/NgImuC/NgimuReceive.h"/>
+      <FILE id="tlwJkd" name="Osc99.h" compile="0" resource="0" file="Source/NgImuC/Osc99.h"/>
+      <FILE id="HaOhiZ" name="OscAddress.c" compile="1" resource="0" file="Source/NgImuC/OscAddress.c"/>
+      <FILE id="ewBpAF" name="OscAddress.h" compile="0" resource="0" file="Source/NgImuC/OscAddress.h"/>
+      <FILE id="v0aGH9" name="OscBundle.c" compile="1" resource="0" file="Source/NgImuC/OscBundle.c"/>
+      <FILE id="edze5O" name="OscBundle.h" compile="0" resource="0" file="Source/NgImuC/OscBundle.h"/>
+      <FILE id="wO9uyp" name="OscCommon.c" compile="1" resource="0" file="Source/NgImuC/OscCommon.c"/>
+      <FILE id="lfSHgD" name="OscCommon.h" compile="0" resource="0" file="Source/NgImuC/OscCommon.h"/>
+      <FILE id="d0XdJP" name="OscError.c" compile="1" resource="0" file="Source/NgImuC/OscError.c"/>
+      <FILE id="qvW86a" name="OscError.h" compile="0" resource="0" file="Source/NgImuC/OscError.h"/>
+      <FILE id="LWbJvM" name="OscMessage.c" compile="1" resource="0" file="Source/NgImuC/OscMessage.c"/>
+      <FILE id="eAyFe4" name="OscMessage.h" compile="0" resource="0" file="Source/NgImuC/OscMessage.h"/>
+      <FILE id="jo9Ekf" name="OscPacket.c" compile="1" resource="0" file="Source/NgImuC/OscPacket.c"/>
+      <FILE id="KafATP" name="OscPacket.h" compile="0" resource="0" file="Source/NgImuC/OscPacket.h"/>
+      <FILE id="N9gn8n" name="OscSlip.c" compile="1" resource="0" file="Source/NgImuC/OscSlip.c"/>
+      <FILE id="kTudML" name="OscSlip.h" compile="0" resource="0" file="Source/NgImuC/OscSlip.h"/>
+    </GROUP>
+    <GROUP id="{B174937F-6992-D180-A88F-3DBB055B9535}" name="HeadTrackerC">
+      <FILE id="T4DZKK" name="statistics.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/statistics.c"/>
+      <FILE id="W2JZKe" name="circle.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/circle.c"/>
+      <FILE id="apxJCY" name="frame.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/frame.c"/>
+      <FILE id="UMLedc" name="frame.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/frame.h"/>
+      <FILE id="VVZOSl" name="circle.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/circle.h"/>
+      <FILE id="X2g3yz" name="statistics.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/statistics.h"/>
+      <FILE id="WVyhdH" name="acoustics.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/acoustics.c"/>
+      <FILE id="QrWbPk" name="inertial.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/inertial.h"/>
+      <FILE id="isvJcR" name="inertial.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/inertial.c"/>
+      <FILE id="HEhS3M" name="acoustics.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/acoustics.h"/>
+      <FILE id="T3orky" name="rotation.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/rotation.c"/>
+      <FILE id="o93KbY" name="rotation.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/rotation.h"/>
+      <FILE id="hkyrXw" name="array.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/array.c"/>
+      <FILE id="Qc5pmB" name="array.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/array.h"/>
+      <FILE id="gx4RaB" name="particleslam.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/particleslam.c"/>
+      <FILE id="kqjbPI" name="particleslam.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/particleslam.h"/>
+      <FILE id="mP8K1z" name="array_memory_unsafe.c" compile="1" resource="0"
+            file="../../../SDK/lib/HeadTracker/array_memory_unsafe.c"/>
+      <FILE id="S5IFOP" name="array_memory_unsafe.h" compile="0" resource="0"
+            file="../../../SDK/lib/HeadTracker/array_memory_unsafe.h"/>
+      <FILE id="VTsPuD" name="threadmain.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/threadmain.c"/>
+      <FILE id="b38sc9" name="threadmain.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/threadmain.h"/>
+      <FILE id="qFYkAV" name="threadpool.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/threadpool.c"/>
+      <FILE id="fGtdT4" name="threadpool.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/threadpool.h"/>
+      <FILE id="HrOIPA" name="threadcrossplatform.c" compile="1" resource="0"
+            file="../../../SDK/lib/HeadTracker/threadcrossplatform.c"/>
+      <FILE id="bf5yWu" name="threadcrossplatform.h" compile="0" resource="0"
+            file="../../../SDK/lib/HeadTracker/threadcrossplatform.h"/>
+      <FILE id="xyRQ1U" name="auditory.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/auditory.c"/>
+      <FILE id="VpOLRr" name="filter.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/filter.c"/>
+      <FILE id="JcR5pK" name="filter.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/filter.h"/>
+      <FILE id="iiYzrS" name="localization.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/localization.c"/>
+      <FILE id="efgBiN" name="localization.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/localization.h"/>
+      <FILE id="dfvXOD" name="auditory.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/auditory.h"/>
+      <FILE id="X1CEGv" name="timing.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/timing.c"/>
+      <FILE id="tnPDLd" name="timing.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/timing.h"/>
+      <FILE id="pOZkC3" name="debugging.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/debugging.c"/>
+      <FILE id="vk8T86" name="debugging.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/debugging.h"/>
+      <FILE id="G5OOBr" name="wav.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/wav.c"/>
+      <FILE id="xyxGGQ" name="wav.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/wav.h"/>
+      <FILE id="vqqZVA" name="fft.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/fft.c"/>
+      <FILE id="RLpNke" name="fft.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/fft.h"/>
+      <FILE id="MoTl57" name="head.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/head.c"/>
+      <FILE id="t4SIJF" name="head.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/head.h"/>
+      <FILE id="Cuaxpd" name="head_tracker.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/head_tracker.c"/>
+      <FILE id="nkyZmE" name="sphere.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/sphere.c"/>
+      <FILE id="IKZosP" name="sphere.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/sphere.h"/>
+      <FILE id="ZGXZYW" name="head_tracker.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/head_tracker.h"/>
+      <FILE id="hxVsWS" name="impulse.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/impulse.c"/>
+      <FILE id="LF4dQf" name="impulse.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/impulse.h"/>
+      <FILE id="ODCpgF" name="kalman.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/kalman.c"/>
+      <FILE id="NcRPBt" name="kalman.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/kalman.h"/>
+      <FILE id="ATWg1T" name="offline.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/offline.c"/>
+      <FILE id="tamzrK" name="offline.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/offline.h"/>
+      <FILE id="dnyQhX" name="measure.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/measure.c"/>
+      <FILE id="xd2JhE" name="measure.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/measure.h"/>
+      <FILE id="kEmKMO" name="nativefft.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/nativefft.c"/>
+      <FILE id="Yzu17O" name="nativefft.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/nativefft.h"/>
+      <FILE id="GVR9Zb" name="params.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/params.c"/>
+      <FILE id="leIq4S" name="params.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/params.h"/>
+      <FILE id="Z1FcDc" name="signals.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/signals.c"/>
+      <FILE id="f9VAZL" name="signals.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/signals.h"/>
+      <FILE id="RrkG3a" name="state.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/state.c"/>
+      <FILE id="Pq0Xdt" name="state.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/state.h"/>
+      <FILE id="cEcM5c" name="tools.c" compile="1" resource="0" file="../../../SDK/lib/HeadTracker/tools.c"/>
+      <FILE id="RT37IG" name="tools.h" compile="0" resource="0" file="../../../SDK/lib/HeadTracker/tools.h"/>
+    </GROUP>
+    <FILE id="eekF2w" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_serialport" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_dsp" path="../../lib/JUCE/modules"/>
+        <MODULEPATH id="juce_serialport" path="../../lib/JUCE/user_modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2019 targetFolder="Builds/VisualStudio2019" externalLibraries="mkl_intel_ilp64.lib&#10;mkl_sequential.lib&#10;mkl_core.lib&#10;ViconDataStreamSDK_CPP.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"
+                       libraryPath="C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\lib\intel64_win&#10;C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\compiler\lib\intel64_win&#10;C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\tbb\lib\intel64_win\vc_mt&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\Vicon\lib"
+                       headerPath="C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\include"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"
+                       libraryPath="C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\lib\intel64_win&#10;C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\compiler\lib\intel64_win&#10;C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\tbb\lib\intel64_win\vc_mt&#10;C:\Exchange\MasterThesis\Code\sensor\src\juce\src\AugmentedAudioRenderer\Source\Vicon\lib"
+                       headerPath="C:\Exchange\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\include"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_dsp" path="../../lib/JUCE/modules"/>
+        <MODULEPATH id="juce_serialport" path="../../lib/JUCE/user_modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_dsp" path="../../lib/JUCE/modules"/>
+        <MODULEPATH id="juce_serialport" path="../../lib/JUCE/user_modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <ANDROIDSTUDIO targetFolder="Builds/Android" androidExtraAssetsFolder="C:\Exchange\MasterThesis\Frameworks\JUCE\examples\Assets">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_dsp" path="../../lib/JUCE/modules"/>
+        <MODULEPATH id="juce_serialport" path="../../lib/JUCE/user_modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+    <XCODE_IPHONE targetFolder="Builds/iOS" customXcodeResourceFolders="C:\Exchange\MasterThesis\Frameworks\JUCE\examples\Assets">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_dsp" path="../../lib/JUCE/modules"/>
+        <MODULEPATH id="juce_serialport" path="../../lib/JUCE/user_modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+  </EXPORTFORMATS>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_ASIO="1" JUCE_DSP_USE_INTEL_MKL="1"/>
+  <LIVE_SETTINGS>
+    <WINDOWS buildEnabled="0" continuousRebuildEnabled="0" headerPath="C:\Exchange\MasterThesis\Code\sensor\src\juce\lib\ASIOSDK\common&#10;C:\Exchange\MasterThesis\Code\sensor\src\SDK\lib&#10;C:\Exchange\MasterThesis\Code\sensor\src\SDK\lib\HeadTracker"
+             systemHeaderPath="C:\Exchange\MasterThesis\Code\sensor\src\juce\lib\ASIOSDK\common&#10;C:\Exchange\MasterThesis\Code\sensor\src\SDK\lib&#10;C:\Exchange\MasterThesis\Code\sensor\src\SDK\lib\HeadTracker"/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
