@@ -5,7 +5,8 @@
 
 
 ### Content
-Inertial-acoustic SLAM implementation usable for localization of a robot mannequin while mapping the surrounding boundaries.
+Inertial-acoustic SLAM implementation usable for localization of a robot, equipped with microphones and an inertial unit, while mapping the surrounding boundaries.
+The program can be run without hardware by using the internal hardware emulation mode.
 
 ### Source-Code folder structure:
 
@@ -25,7 +26,7 @@ If not automatically set, following additional steps have to be taken:
 4. The Visual Studio Export settings have to be adapted to link to the correct Extra Library Search Paths in the repository. 
 5. The ViconDataStreamSDK_C.dll and boost_thread-vc90-mt-1_48.dll has to be copied from "src\juce\src\AugmentedAudioRenderer\Source\Vicon" to the build folder.
 
-It is in particular required to install the Intel MKL library fast FFT calculation on Windows and then link the installation path. The version 2019.5.281 is used which can be acquired via NuGet. 
+It is in particular required to install the Intel MKL library fast FFT calculation on Windows and then link the installation path. The version 2019.5.281 is used which can be acquired via NuGet. Also it is required to have an Asio Driver installed e.g. https://www.asio4all.org/.
 
 ### Program structure:
 After pressing the start button in the GUI following function blocks are run:
