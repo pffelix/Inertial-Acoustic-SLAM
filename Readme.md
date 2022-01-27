@@ -18,7 +18,7 @@ The program can be run on Windows without hardware by using the internal hardwar
 The program can be run by loading JUCE Projucer.exe in "src\juce\lib\JUCE".
 Then open the JUCE project via File/Open -> "src\juce\src\AugmentedAudioRenderer.jucer".
 
-It is required to install the Intel MKL library FFT calculation with real-time perfomance on Windows. The version 2019.5.281 is used which can be acquired via NuGet. Also it is required to have an Asio Driver installed e.g. https://www.asio4all.org/.
+It is required to install the Intel MKL library for reaching real-time perfomance FFT performance on Windows. The version 2019.5.281 is used which can be acquired via NuGet. Also it is required to have an Asio Driver installed e.g. https://www.asio4all.org/.
 If not automatically set, following additional steps have to be taken:
 
 1. The JUCE Global Paths have to be defined in Projucer via "File/Global Paths" to include the JUCE library located in "src\juce\lib\".
