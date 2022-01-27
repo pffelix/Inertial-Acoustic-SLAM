@@ -1,7 +1,7 @@
 <!-- #######  Augmented Audio Renderer #########-->
 ![image_setup](images/closetocorner.png?raw=true)
 <h1 style="color: #5e9ca0;">Augmented Audio Renderer</h1>
-<h2 style="color: #2e6c80;">Implementation usable for Localization of a Robot Mannequin and Map the surrounding boundaries using real-time acoustic-inertial sensor recordings</h2>
+<h2 style="color: #2e6c80;">SLAM implementation usable for localization of a robot mannequin while mapping the surrounding boundaries using real-time acoustic-inertial sensor recordings</h2>
 <p>&nbsp;</p>
 <p><span style="color: #0000ff;"><strong>&nbsp;Source-Code folder structure: (/src/)</strong></span></p>
 <ol style="list-style: none; font-size: 14px; line-height: 32px; font-weight: bold;">
