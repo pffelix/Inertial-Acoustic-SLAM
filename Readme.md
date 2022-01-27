@@ -6,7 +6,7 @@
 
 ### Content
 Inertial-acoustic SLAM implementation usable for localization of a robot, equipped with microphones and an inertial unit, while mapping the surrounding boundaries.
-The program can be run without hardware by using the internal hardware emulation mode.
+The program can be run on Windows without hardware by using the internal hardware emulation mode.
 
 ### Source-Code folder structure:
 
