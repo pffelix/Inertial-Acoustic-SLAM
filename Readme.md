@@ -5,7 +5,7 @@
 
 
 ### Content
-Inertial-acoustic SLAM implementation usable for localization of a robot, equipped with microphones and an inertial unit, while mapping the surrounding boundaries with a latency less then 40ms on a conventional laptop.
+Inertial-acoustic SLAM implementation usable for localization of a robot, equipped with microphones and an inertial unit, while mapping the surrounding boundaries with an update latency less then 40ms on a conventional laptop.
 The program can be run on Windows without hardware by using the internal hardware emulation mode.
 
 ### Source-Code folder structure:
