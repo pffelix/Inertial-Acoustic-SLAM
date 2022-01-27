@@ -23,8 +23,9 @@ If not automatically set, following additional steps have to be taken:
 2. The JUCE project settings have to be adapted to link to the correct Header Search Paths in the repository. 
 3. The Visual Studio Export settings have to be adapted to link to the correct Header Search Paths in the repository. 
 4. The Visual Studio Export settings have to be adapted to link to the correct Extra Library Search Paths in the repository. 
+5. The ViconDataStreamSDK_C.dll and boost_thread-vc90-mt-1_48.dll has to be copied from "src\juce\src\AugmentedAudioRenderer\Source\Vicon" to the build folder.
 
-It is in particular required to install the Intel MKL library fast FFT calculation on Windows and then link the installation path. The version 2019.5.281 is used which can be acquired via NuGet.
+It is in particular required to install the Intel MKL library fast FFT calculation on Windows and then link the installation path. The version 2019.5.281 is used which can be acquired via NuGet. 
 
 ### Program structure:
 After pressing the start button in the GUI following function blocks are run:

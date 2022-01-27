@@ -196,10 +196,10 @@
     </XCODE_MAC>
     <VS2019 targetFolder="Builds/VisualStudio2019" externalLibraries="mkl_intel_ilp64.lib&#10;mkl_sequential.lib&#10;mkl_core.lib&#10;ViconDataStreamSDK_CPP.lib">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"
                        libraryPath="C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\lib\intel64_win&#10;C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\compiler\lib\intel64_win&#10;C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\tbb\lib\intel64_win\vc_mt&#10;C:\Users\Felix\Code\Github\inertial-acoustic-slam\src\juce\src\AugmentedAudioRenderer\Source\Vicon\lib&#10;C:\Users\Felix\Code\Github\inertial-acoustic-slam\src\juce\src\AugmentedAudioRenderer\Source\Vicon"
                        headerPath="C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\include"/>
-        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioLatencyDemo"
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioLatencyDemo"
                        libraryPath="C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\lib\intel64_win&#10;C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\compiler\lib\intel64_win&#10;C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\tbb\lib\intel64_win\vc_mt&#10;C:\Users\Felix\Code\Github\inertial-acoustic-slam\src\juce\src\AugmentedAudioRenderer\Source\Vicon\lib&#10;C:\Users\Felix\Code\Github\inertial-acoustic-slam\src\juce\src\AugmentedAudioRenderer\Source\Vicon"
                        headerPath="C:\Tmp\MasterThesis\Frameworks\IntelSWTools\compilers_and_libraries_2019.5.281\windows\mkl\include"/>
       </CONFIGURATIONS>
