@@ -27,7 +27,7 @@ If not automatically set, following additional steps have to be taken:
 4. The JUCE Visual Studio Export settings have to be adapted to link to the correct Extra Library Search Paths in the repository. 
 5. The ViconDataStreamSDK_C.dll and boost_thread-vc90-mt-1_48.dll have to be copied from "src\juce\src\AugmentedAudioRenderer\Source\Vicon" to the build folder.
 
-### Program structure:
+### Program architecture:
 After pressing the start button in the GUI following function blocks are run:
 <p align="center">
 <img src="images/diagram.png">
