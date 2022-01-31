@@ -20,7 +20,7 @@ After pressing the start button in the GUI following function blocks are run:
 <img src="images/diagram.png">
 </p>
 
-If elements of the program are re-used please cite:
+If elements of the program are re-used please cite:<br>
 F. Pfreundtner, J. Yang and G. Sörös, "(W)Earable Microphone Array and Ultrasonic Echo Localization for Coarse Indoor Environment Mapping," ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp. 4475-4479, doi: 10.1109/ICASSP39728.2021.9414356
 
 ### Installation:
