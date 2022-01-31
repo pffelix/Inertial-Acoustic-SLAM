@@ -10,7 +10,7 @@ The program can be run on Windows without hardware by using the internal hardwar
 
 ### Source-Code folder structure:
 
-1. "src/juce/src" folder contains platform independent JUCE framework C++ 14 code for GUI elements and the user interface to control binaural mixed audio playback based on the robot position in real-time. The JUCE code also allows to read x-io technologies NGIMU inertial measurement unit data via Serial Interface and Vicon Nexus measurement data for ground truth position calculation. It furthermore allows to send and record sine-sweeps using Steinberg ASIO or Windows audio drivers.
+1. "src/juce/src" folder contains platform independent JUCE framework C++ 14 code for GUI elements and the user interface. The code allow's to read x-io technologies NGIMU inertial measurement unit data via Serial or UDP Interface and Vicon Nexus measurement data via the Vicon Datastream SDK for ground truth position calculation. It also allows to send and record sine-sweeps using Steinberg ASIO or Windows audio drivers.
 
 2. "src/sdk" folder contains C code to perform inertial-acoustic sensor-fusion and SLAM on Windows. It allows to convolve recorded audio samples with minimal latency using the Intel MKL library, extract impulse responses, process the impulse responses, map boundaries and calculate the position of a robot equiped with microphones.
 
