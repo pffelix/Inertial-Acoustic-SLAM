@@ -20,6 +20,9 @@ After pressing the start button in the GUI following function blocks are run:
 <img src="images/diagram.png">
 </p>
 
+If elements of the program are re-used please cite: 
+F. Pfreundtner, J. Yang and G. Sörös, "(W)Earable Microphone Array and Ultrasonic Echo Localization for Coarse Indoor Environment Mapping," ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp. 4475-4479, doi: 10.1109/ICASSP39728.2021.9414356
+
 ### Installation:
 The program can be run by loading JUCE Projucer.exe in "src\juce\lib\JUCE".
 Then open the JUCE project via File/Open -> "src\juce\src\AugmentedAudioRenderer.jucer".
@@ -33,6 +36,3 @@ If not automatically set, following additional steps have to be taken:
 4. The JUCE Visual Studio Export settings have to be adapted to link to the correct Extra Library Search Paths in the repository. 
 5. The ViconDataStreamSDK_C.dll and boost_thread-vc90-mt-1_48.dll have to be copied from "src\juce\src\AugmentedAudioRenderer\Source\Vicon" to the build folder.
 
-### Citation:
-If elements of the program are re-used please cite: 
-F. Pfreundtner, J. Yang and G. Sörös, "(W)Earable Microphone Array and Ultrasonic Echo Localization for Coarse Indoor Environment Mapping," ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021, pp. 4475-4479, doi: 10.1109/ICASSP39728.2021.9414356
